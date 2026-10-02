@@ -12,8 +12,8 @@
 nombre   : Usuario444
 rol      : estudiante
 enfoque  : redes · infraestructura · seguridad
-modo     : perfil bajo (si me ves por aquí, algo funcionó)
-estado   : configurando routers virtuales, rompiéndolos y volviéndolos a configurar
+modo     : ...
+estado   : con sueño  
 ```
 
 <br>
