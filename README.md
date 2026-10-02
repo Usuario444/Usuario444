@@ -49,7 +49,7 @@ estado   : con sueño
 ```text
 ccna/
 ├── ITN   [ok]        Introduction to Networks
-├── SRWE  [en curso]  Switching, Routing and Wireless Essentials
+├── SRWE  [...]  Switching, Routing and Wireless Essentials
 └── ENSA  [pendiente] Enterprise Networking, Security and Automation
 ```
 
