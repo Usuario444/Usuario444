@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Usuario444 · estudiante de redes y seguridad" width="100%">
+<img src="assets/banner.svg" alt="Usuario444 · estudiante de redes y seguridad informatica" width="100%">
 
 </div>
 
