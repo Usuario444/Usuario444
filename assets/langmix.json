@@ -1,0 +1,29 @@
+{
+  "title": "Protocolos & Estandares",
+  "axes": [
+    {
+      "label": "OSPF",
+      "value": 85
+    },
+    {
+      "label": "802.1Q (VLAN)",
+      "value": 90
+    },
+    {
+      "label": "STP / RSTP",
+      "value": 85
+    },
+    {
+      "label": "LACP",
+      "value": 85
+    },
+    {
+      "label": "HSRP",
+      "value": 80
+    },
+    {
+      "label": "NAT / PAT",
+      "value": 85
+    }
+  ]
+}

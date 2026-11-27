@@ -1,0 +1,29 @@
+{
+  "title": "Skills & Enfoque",
+  "axes": [
+    {
+      "label": "Switching (L2)",
+      "value": 85
+    },
+    {
+      "label": "Routing (OSPF)",
+      "value": 85
+    },
+    {
+      "label": "Labs (GNS3/PNET/PT)",
+      "value": 85
+    },
+    {
+      "label": "Wireshark / Analisis",
+      "value": 80
+    },
+    {
+      "label": "Linux / Sysadmin",
+      "value": 75
+    },
+    {
+      "label": "Java",
+      "value": 70
+    }
+  ]
+}

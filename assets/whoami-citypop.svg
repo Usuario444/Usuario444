@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 390" width="960" height="390" role="img" aria-labelledby="title desc">
+  <title id="title">Usuario444 — Redes y Seguridad Informática</title>
+  <desc id="desc">Perfil en terminal estilo city-pop con enfoque en redes, conmutación y enrutamiento.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#f78ca0"/>
+      <stop offset="0.5" stop-color="#c7a4f5"/>
+      <stop offset="1" stop-color="#76d8d2"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Deep Black background for maximum contrast -->
+  <rect width="960" height="390" rx="18" fill="#080c14"/>
+  <rect x="9" y="9" width="942" height="372" rx="13" fill="none" stroke="url(#sky)" stroke-width="2"/>
+  <circle cx="35" cy="35" r="5" fill="#f78ca0"/>
+  <circle cx="54" cy="35" r="5" fill="#f1d09a"/>
+  <circle cx="73" cy="35" r="5" fill="#76d8d2"/>
+  <text x="98" y="41" fill="#8f91a8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">Usuario444  ·  network terminal shell  ·  online</text>
+  <path d="M29 58H931" stroke="#1f293d"/>
+
+  <!-- Left panel: whoami & protocols -->
+  <rect x="29" y="78" width="594" height="271" rx="9" fill="#0d131f" stroke="#c7a4f5" stroke-width="1.5"/>
+  <text x="48" y="111" fill="#76d8d2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" font-weight="700">❯ whoami</text>
+  <text x="48" y="143" fill="#ffffff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" font-weight="600">Usuario444</text>
+  <text x="175" y="143" fill="#8f91a8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">—</text>
+  <text x="195" y="143" fill="#f78ca0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18">redes y seguridad</text>
+
+  <path d="M48 166H604" stroke="#1f293d"/>
+  <text x="48" y="196" fill="#8f91a8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">enfoque:</text>
+  <text x="146" y="196" fill="#c7a4f5" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">redes · infraestructura · seguridad</text>
+  <text x="48" y="225" fill="#8f91a8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">estado:</text>
+  <text x="146" y="225" fill="#f3d29b" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">con sueño ☕</text>
+
+  <text x="48" y="267" fill="#76d8d2" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20" font-weight="700">❯ show protocols</text>
+  <text x="48" y="299" fill="#f78ca0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">layer-2/</text>
+  <text x="146" y="299" fill="#d6deeb" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">802.1Q · LACP · STP/RSTP · ARP</text>
+  <text x="48" y="326" fill="#f78ca0" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">layer-3/</text>
+  <text x="146" y="326" fill="#d6deeb" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16">OSPF · IPv4/IPv6 · HSRP · NAT/PAT</text>
+
+  <!-- Right panel: synthwave sun & status -->
+  <rect x="651" y="78" width="280" height="271" rx="9" fill="#0d131f" stroke="#c7a4f5" stroke-width="1.5"/>
+  <text x="674" y="111" fill="#f3d29b" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="17">city-pop runtime</text>
+  <circle cx="791" cy="203" r="56" fill="#f78ca0" opacity=".95"/>
+  <path d="M674 202H908M674 216H908M674 230H908M674 244H908M674 258H908" stroke="#0d131f" stroke-width="5" opacity=".9"/>
+  <path d="M674 277C711 247 746 303 785 272S861 249 908 281" fill="none" stroke="#76d8d2" stroke-width="3" filter="url(#glow)"/>
+  <path d="M674 294C716 264 746 320 789 289S862 270 908 298" fill="none" stroke="#c7a4f5" stroke-width="2"/>
+  <text x="674" y="326" fill="#8f91a8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">status: ccna [itn✓ srwe✓ ensa⋯]</text>
+</svg>
