@@ -1,11 +1,11 @@
 <div align="center">
 
-<!-- LOCAL CITY-POP VIM TERMINAL BANNER (ANIMADO) -->
+<!-- LOCAL CITY-POP VIM TERMINAL BANNER (ANIMADO CON TUX) -->
 <a href="https://github.com/Usuario444">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.v10.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.v10.svg">
-    <img src="assets/banner-dark.v10.svg" width="960" alt="Perfil de Usuario444">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.v11.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.v11.svg">
+    <img src="assets/banner-dark.v11.svg" width="960" alt="Perfil de Usuario444">
   </picture>
 </a>
 
