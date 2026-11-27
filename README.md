@@ -3,9 +3,9 @@
 <!-- LOCAL CITY-POP VIM TERMINAL BANNER (ANIMADO CON TUX) -->
 <a href="https://github.com/Usuario444">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.v11.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.v11.svg">
-    <img src="assets/banner-dark.v11.svg" width="960" alt="Perfil de Usuario444">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.v12.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.v12.svg">
+    <img src="assets/banner-dark.v12.svg" width="960" alt="Perfil de Usuario444">
   </picture>
 </a>
 
@@ -29,53 +29,6 @@
 <p align="center">
   <img src="assets/whoami-citypop.svg" width="960" alt="Terminal City-Pop de Usuario444">
 </p>
-
-<br>
-
-## `$ ls ~/stack`
-
-**Lenguaje & Base de Datos**
-
-<img src="https://skillicons.dev/icons?i=java,postgres&theme=dark" alt="Java, PostgreSQL" />
-
-<br>
-
-**Sistemas & Herramientas de Desarrollo**
-
-<img src="https://skillicons.dev/icons?i=linux,git,vscode,idea,postman&theme=dark" alt="Linux, Git, VS Code, IntelliJ, Postman" />
-
-<br>
-
-**Laboratorio de Redes & Análisis de Tráfico**
-
-<img src="https://img.shields.io/badge/Cisco_Packet_Tracer-080c14?style=flat-square&logo=cisco&logoColor=76d8d2" alt="Packet Tracer" />
-<img src="https://img.shields.io/badge/PNETLab-080c14?style=flat-square&logoColor=f78ca0" alt="PNETLab" />
-<img src="https://img.shields.io/badge/GNS3-080c14?style=flat-square&logoColor=c7a4f5" alt="GNS3" />
-<img src="https://img.shields.io/badge/Wireshark-080c14?style=flat-square&logo=wireshark&logoColor=76d8d2" alt="Wireshark" />
-<img src="https://img.shields.io/badge/Cisco_IOS-080c14?style=flat-square&logo=cisco&logoColor=f78ca0" alt="Cisco IOS" />
-
-<br>
-
-**Protocolos & Estándares**
-
-> `802.1Q` · `LACP` · `STP / RSTP` · `OSPF` · `HSRP` · `NAT / PAT` · `ARP` · `DHCP` · `DNS` · `SSH`
-
-<br>
-
-**Apuntes & Productividad**
-
-<img src="https://skillicons.dev/icons?i=obsidian&theme=dark" alt="Obsidian" />
-
----
-
-## `$ cat currently_learning.txt`
-
-```text
-ccna/
-├── ITN   [ok]        Introduction to Networks
-├── SRWE  [ok]        Switching, Routing and Wireless Essentials
-└── ENSA  [pendiente] Enterprise Networking, Security and Automation
-```
 
 ---
 

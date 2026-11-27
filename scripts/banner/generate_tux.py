@@ -57,6 +57,7 @@ THEMES = {
         "muted":   "#8291A8",
         "text":    "#F0E6F0",
         "portrait":"#F78CA0",   # city pop pink
+        "tux":     "#000000",   # black Tux animation
         "chrome":  "#C9B1D9",   # city pop lavender
         "accent":  "#F78CA0",
         "shadow":  "#02050B",
@@ -69,6 +70,7 @@ THEMES = {
         "muted":   "#9B7B8A",
         "text":    "#2D1A24",
         "portrait":"#E05F80",
+        "tux":     "#000000",   # black Tux animation
         "chrome":  "#7B5EA7",
         "accent":  "#E05F80",
         "shadow":  "#D4A0B0",
@@ -241,6 +243,19 @@ def render_svg(
         'flood-opacity=".35"/><feComposite in2="b" operator="in"/>'
         '<feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>',
         '<clipPath id="visualClip"><rect x="49" y="124" width="390" height="414" rx="3"/></clipPath>',
+        (
+            '<radialGradient id="tuxBacklight" cx="50%" cy="50%" r="50%">'
+            '<stop offset="0%" stop-color="#E2E8F0" stop-opacity="0.92"/>'
+            '<stop offset="52%" stop-color="#94A3B8" stop-opacity="0.45"/>'
+            '<stop offset="85%" stop-color="#1E293B" stop-opacity="0.15"/>'
+            '<stop offset="100%" stop-color="#101726" stop-opacity="0"/>'
+            '</radialGradient>'
+            if theme_name == "dark"
+            else '<radialGradient id="tuxBacklight" cx="50%" cy="50%" r="50%">'
+            '<stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>'
+            '<stop offset="100%" stop-color="#FDE8EE" stop-opacity="0"/>'
+            '</radialGradient>'
+        ),
         "</defs>",
         f'<rect width="{W}" height="{H}" rx="18" fill="{t["bg"]}"/>',
         f'<rect x="13" y="13" width="1154" height="584" rx="13" fill="{t["panel"]}" '
@@ -262,6 +277,7 @@ def render_svg(
         'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11">TUX / 1-BIT</text>',
         f'<path d="M49 141h12M49 141v12M439 141h-12M439 141v12M49 539h12M49 539v-12'
         f'M439 539h-12M439 539v-12" fill="none" stroke="{t["chrome"]}" opacity=".55"/>',
+        '<rect x="49" y="124" width="390" height="414" rx="3" fill="url(#tuxBacklight)"/>',
         '<g clip-path="url(#visualClip)" shape-rendering="crispEdges">',
         '<g opacity="1">',
     ]
@@ -285,7 +301,7 @@ def render_svg(
         drift_opacity_values = ";".join(drift_opacity)
         d = point_path(pts)
         parts.append(
-            f'<path d="{d}" fill="none" stroke="{t["portrait"]}" stroke-width="1" '
+            f'<path d="{d}" fill="none" stroke="{t["tux"]}" stroke-width="1" '
             'opacity=".94">'
             f'<animateTransform attributeName="transform" type="translate" begin="{INTRO_SECONDS}s" '
             f'dur="{loop_duration}s" repeatCount="indefinite" calcMode="linear" '
@@ -298,7 +314,7 @@ def render_svg(
     for i in range(n):
         positions = animate_values(frames, i)
         parts.append(
-            f'<path d="M-.65-.65h1.3v1.3h-1.3z" fill="{t["portrait"]}">'
+            f'<path d="M-.65-.65h1.3v1.3h-1.3z" fill="{t["tux"]}">'
             f'<animateTransform attributeName="transform" type="translate" begin="{INTRO_SECONDS}s" '
             f'dur="{loop_duration}s" repeatCount="indefinite" calcMode="linear" '
             f'keyTimes="{key_times}" values="{positions}"/>'
@@ -312,7 +328,7 @@ def render_svg(
         visible[index * 2 + 2] = ".82"
         visible[index * 2 + 3] = ".82"
         parts.append(
-            f'<path d="{particle_path(particles)}" fill="none" stroke="{t["portrait"]}" '
+            f'<path d="{particle_path(particles)}" fill="none" stroke="{t["tux"]}" '
             'stroke-width="1" opacity="0">'
             f'<animate attributeName="opacity" begin="{INTRO_SECONDS}s" dur="{loop_duration}s" '
             f'repeatCount="indefinite" calcMode="linear" keyTimes="{key_times}" '
@@ -329,7 +345,7 @@ def render_svg(
         if not len(pts):
             continue
         parts.append(
-            f'<path d="{point_path(pts)}" fill="none" stroke="{t["portrait"]}" '
+            f'<path d="{point_path(pts)}" fill="none" stroke="{t["tux"]}" '
             'stroke-width="1" opacity="0">'
             f'<animate attributeName="opacity" begin="{num(starts[group])}s" dur=".8s" '
             'values="0;1" fill="freeze"/>'
@@ -418,7 +434,7 @@ def main() -> None:
             for name, image in logos.items()
         }
         svg = render_svg(theme, portrait, sampled, hold_particles, rng)
-        output = ASSETS / f"banner-{theme}.v11.svg"
+        output = ASSETS / f"banner-{theme}.v12.svg"
         output.write_text(svg, encoding="utf-8")
         byte_size = output.stat().st_size
         print(
