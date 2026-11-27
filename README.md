@@ -1,6 +1,13 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Usuario444 · estudiante de redes y seguridad informática" width="100%">
+<!-- LOCAL CITY-POP VIM TERMINAL BANNER (ANIMADO) -->
+<a href="https://github.com/Usuario444">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.v9.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.v9.svg">
+    <img src="assets/banner-dark.v9.svg" width="960" alt="Perfil de Usuario444">
+  </picture>
+</a>
 
 <br><br>
 
